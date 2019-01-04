@@ -1,0 +1,13 @@
+package com.jbpm;
+
+import org.drools.runtime.process.WorkflowProcessInstance;
+import com.plugin.jbpm.drools.model.Hour;
+
+rule "it is afternoon before dinner"
+	ruleflow-group "define_period"
+	when
+		$process: WorkflowProcessInstance()
+		Hour(value >= 12 && < 20) from $process.getVariable("hourOfDay")
+	then 
+		$process.setVariable("period", "afternoon");
+end

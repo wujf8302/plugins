@@ -1,0 +1,23 @@
+package com.subpoint.drl
+
+import com.plugin.drools.addpoint.model.PointDomain;
+
+// 发生退货，扣减10分
+rule subBackNumsPoint
+	salience 10
+when
+	$pointDomain : PointDomain(backNums >= 1)
+then
+	$pointDomain.setPoint($pointDomain.getPoint()-10);
+	$pointDomain.recordPointLog($pointDomain.getUserName(),"subBackNumsPoint");
+end
+
+// 退货金额大于100，扣减100分
+rule subBackMondyPoint
+	salience 9
+when
+	$pointDomain : PointDomain(backMondy >= 100)
+then
+	$pointDomain.setPoint($pointDomain.getPoint()-10);
+	$pointDomain.recordPointLog($pointDomain.getUserName(),"subBackMondyPoint");
+end

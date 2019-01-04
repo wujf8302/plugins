@@ -1,0 +1,7 @@
+
+
+jbpm5.1
+
+删除drools-persistence-jpa-5.2.0.Final.jar里的info包
+
+在 com-plugin\plugin-jbpm\src\main\java\org\drools\persistence\info 下新增相关类

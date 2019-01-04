@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<definitions id="Definition"
+             targetNamespace="http://www.jboss.org/drools"
+             typeLanguage="http://www.java.com/javaTypes"
+             expressionLanguage="http://www.mvel.org/2.0"
+             xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+             xmlns:g="http://www.jboss.org/drools/flow/gpd"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:tns="http://www.jboss.org/drools">
+
+  <itemDefinition id="_hostActorLimitDayItem" structureRef="Integer" />
+  <itemDefinition id="_hostActorItem" structureRef="String" />
+  <itemDefinition id="_deptIdItem" structureRef="String" />
+  <itemDefinition id="_preNodeCodeItem" structureRef="String" />
+  <itemDefinition id="_handleResultItem" structureRef="String" />
+
+  <itemDefinition id="_11-hostActorLimitDayItem" structureRef="Integer" />
+  <itemDefinition id="_11-hostActorItem" structureRef="String" />
+  <itemDefinition id="_11-deptIdItem" structureRef="String" />
+  <itemDefinition id="_11-preNodeCodeItem" structureRef="String" />
+  <itemDefinition id="_11-handleResultItem" structureRef="String" />
+
+  <process processType="Private" isExecutable="true" id="com.wujf.jbpm.fptask" name="Greetings" >
+
+    <!-- process variables -->
+    <property id="hostActorLimitDay" itemSubjectRef="_hostActorLimitDayItem"/>
+    <property id="hostActor" itemSubjectRef="_hostActorItem"/>
+    <property id="deptId" itemSubjectRef="_deptIdItem"/>
+    <property id="preNodeCode" itemSubjectRef="_preNodeCodeItem"/>
+    <property id="handleResult" itemSubjectRef="_handleResultItem"/>
+
+    <!-- nodes -->
+    <startEvent id="_1" name="StartProcess" />
+    <scriptTask id="_2" name="Insert the Process Instance" >
+      <script>org.drools.runtime.process.WorkflowProcessInstance process = (org.drools.runtime.process.WorkflowProcessInstance)kcontext.getProcessInstance();
+System.out.println("It is "+process.getVariable("hourOfDay")+" and i wish you a ");
+System.out.println("Id: " + process.getId());
+System.out.println("ProcessId: " + process.getProcessId());
+System.out.println("ProcessName: " + process.getProcessName());
+System.out.println("State: " + process.getState());
+kcontext.getKnowledgeRuntime().insert(process);
+      </script>
+    </scriptTask>
+    <businessRuleTask id="_3" name="fptask" g:ruleFlowGroup="fp_task" >
+    </businessRuleTask>
+    <exclusiveGateway id="_4" name="Split" gatewayDirection="Diverging" />
+    <scriptTask id="_5" name="Morning" >
+      <script>System.out.println("good morning ");
+org.drools.runtime.process.WorkflowProcessInstance process = (org.drools.runtime.process.WorkflowProcessInstance)kcontext.getProcessInstance();
+System.out.println("------------------------------------");
+System.out.println("Id: " + process.getId());
+System.out.println("ProcessId: " + process.getProcessId());
+System.out.println("ProcessName: " + process.getProcessName());
+System.out.println("State: " + process.getState());
+String[] s = process.getEventTypes();
+for (int i = 0; i &lt; s.length; i++) {
+		System.out.println(s[i]);
+}
+System.out.println("------------------------------------");
+System.out.println(process.getProcess().getName());
+      </script>
+    </scriptTask>
+    <scriptTask id="_6" name="Afternoon" >
+      <script>System.out.println("good afternoon");
+org.drools.runtime.process.WorkflowProcessInstance process = (org.drools.runtime.process.WorkflowProcessInstance)kcontext.getProcessInstance();
+System.out.println("------------------------------------");
+System.out.println("Id: " + process.getId());
+System.out.println("ProcessId: " + process.getProcessId());
+System.out.println("ProcessName: " + process.getProcessName());
+System.out.println("State: " + process.getState());
+String[] s = process.getEventTypes();
+for (int i = 0; i &lt; s.length; i++) {
+		System.out.println(s[i]);
+}
+System.out.println("------------------------------------");
+System.out.println(process.getProcess().getName());</script>
+    </scriptTask>
+    <scriptTask id="_7" name="Night" >
+      <script>System.out.println("good night");
+org.drools.runtime.process.WorkflowProcessInstance process = (org.drools.runtime.process.WorkflowProcessInstance)kcontext.getProcessInstance();
+System.out.println("------------------------------------");
+System.out.println("Id: " + process.getId());
+System.out.println("ProcessId: " + process.getProcessId());
+System.out.println("ProcessName: " + process.getProcessName());
+System.out.println("State: " + process.getState());
+String[] s = process.getEventTypes();
+for (int i = 0; i &lt; s.length; i++) {
+		System.out.println(s[i]);
+}
+System.out.println("------------------------------------");
+System.out.println(process.getProcess().getName());</script>
+    </scriptTask>
+    <exclusiveGateway id="_8" name="Split" gatewayDirection="Converging" />
+    <endEvent id="_9" name="EndProcess" >
+        <terminateEventDefinition />
+    </endEvent>
+    <scriptTask id="_10" name="jl" >
+      <script>kcontext.setVariable("preNodeCode", "Dispatch");</script>
+    </scriptTask>
+    <userTask id="_11" name="User Task" >
+      <ioSpecification>
+        <dataInput id="_11_hostActorLimitDayInput" name="hostActorLimitDay" />
+        <dataInput id="_11_hostActorInput" name="hostActor" />
+        <dataInput id="_11_deptIdInput" name="deptId" />
+        <dataInput id="_11_preNodeCodeInput" name="preNodeCode" />
+        <dataInput id="_11_CommentInput" name="Comment" />
+        <dataInput id="_11_GroupIdInput" name="GroupId" />
+        <dataOutput id="_11_hostActorLimitDayOutput" name="hostActorLimitDay" />
+        <dataOutput id="_11_hostActorOutput" name="hostActor" />
+        <dataOutput id="_11_deptIdOutput" name="deptId" />
+        <dataOutput id="_11_handleResultOutput" name="handleResult" />
+        <inputSet>
+          <dataInputRefs>_11_hostActorLimitDayInput</dataInputRefs>
+          <dataInputRefs>_11_hostActorInput</dataInputRefs>
+          <dataInputRefs>_11_deptIdInput</dataInputRefs>
+          <dataInputRefs>_11_preNodeCodeInput</dataInputRefs>
+          <dataInputRefs>_11_CommentInput</dataInputRefs>
+          <dataInputRefs>_11_GroupIdInput</dataInputRefs>
+        </inputSet>
+        <outputSet>
+          <dataOutputRefs>_11_hostActorLimitDayOutput</dataOutputRefs>
+          <dataOutputRefs>_11_hostActorOutput</dataOutputRefs>
+          <dataOutputRefs>_11_deptIdOutput</dataOutputRefs>
+          <dataOutputRefs>_11_handleResultOutput</dataOutputRefs>
+        </outputSet>
+      </ioSpecification>
+      <dataInputAssociation>
+        <sourceRef>hostActorLimitDay</sourceRef>
+        <targetRef>_11_hostActorLimitDayInput</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <sourceRef>hostActor</sourceRef>
+        <targetRef>_11_hostActorInput</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <sourceRef>deptId</sourceRef>
+        <targetRef>_11_deptIdInput</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <sourceRef>preNodeCode</sourceRef>
+        <targetRef>_11_preNodeCodeInput</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_11_CommentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">User Task</from>
+          <to xsi:type="tFormalExpression">_11_CommentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_11_GroupIdInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{deptId}</from>
+          <to xsi:type="tFormalExpression">_11_GroupIdInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_11_hostActorLimitDayOutput</sourceRef>
+        <targetRef>hostActorLimitDay</targetRef>
+      </dataOutputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_11_hostActorOutput</sourceRef>
+        <targetRef>hostActor</targetRef>
+      </dataOutputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_11_deptIdOutput</sourceRef>
+        <targetRef>deptId</targetRef>
+      </dataOutputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_11_handleResultOutput</sourceRef>
+        <targetRef>handleResult</targetRef>
+      </dataOutputAssociation>
+      <potentialOwner>
+        <resourceAssignmentExpression>
+          <formalExpression>#{hostActor}</formalExpression>
+        </resourceAssignmentExpression>
+      </potentialOwner>
+    </userTask>
+
+    <!-- connections -->
+    <sequenceFlow id="_11-_2" sourceRef="_11" targetRef="_2" />
+    <sequenceFlow id="_2-_3" sourceRef="_2" targetRef="_3" />
+    <sequenceFlow id="_3-_4" sourceRef="_3" targetRef="_4" />
+    <sequenceFlow id="_4-_5" sourceRef="_4" targetRef="_5" >
+      <conditionExpression xsi:type="tFormalExpression" >
+          org.drools.runtime.process.WorkflowProcessInstance process = (org.drools.runtime.process.WorkflowProcessInstance)kcontext.getProcessInstance();     
+	      return "morning".equals(process.getVariable("period"));
+      </conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_4-_6" sourceRef="_4" targetRef="_6" >
+      <conditionExpression xsi:type="tFormalExpression" >
+          org.drools.runtime.process.WorkflowProcessInstance process = (org.drools.runtime.process.WorkflowProcessInstance)kcontext.getProcessInstance();     
+	      return "afternoon".equals(process.getVariable("period"));
+      </conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_4-_7" sourceRef="_4" targetRef="_7" >
+      <conditionExpression xsi:type="tFormalExpression" >
+          org.drools.runtime.process.WorkflowProcessInstance process = (org.drools.runtime.process.WorkflowProcessInstance)kcontext.getProcessInstance();     
+	      return "night".equals(process.getVariable("period"));
+	   </conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_7-_8" sourceRef="_7" targetRef="_8" />
+    <sequenceFlow id="_6-_8" sourceRef="_6" targetRef="_8" />
+    <sequenceFlow id="_5-_8" sourceRef="_5" targetRef="_8" />
+    <sequenceFlow id="_8-_9" sourceRef="_8" targetRef="_9" />
+    <sequenceFlow id="_1-_10" sourceRef="_1" targetRef="_10" />
+    <sequenceFlow id="_10-_11" sourceRef="_10" targetRef="_11" />
+
+  </process>
+
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="com.wujf.jbpm.fptask" >
+      <bpmndi:BPMNShape bpmnElement="_1" >
+        <dc:Bounds x="2" y="28" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_2" >
+        <dc:Bounds x="333" y="25" width="187" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_3" >
+        <dc:Bounds x="387" y="158" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_4" >
+        <dc:Bounds x="177" y="156" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_5" >
+        <dc:Bounds x="47" y="235" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_6" >
+        <dc:Bounds x="162" y="233" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_7" >
+        <dc:Bounds x="273" y="232" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_8" >
+        <dc:Bounds x="174" y="308" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_9" >
+        <dc:Bounds x="174" y="401" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_10" >
+        <dc:Bounds x="87" y="25" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_11" >
+        <dc:Bounds x="207" y="22" width="100" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="_11-_2" >
+        <di:waypoint x="257" y="46" />
+        <di:waypoint x="426" y="49" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_2-_3" >
+        <di:waypoint x="426" y="49" />
+        <di:waypoint x="427" y="182" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_3-_4" >
+        <di:waypoint x="427" y="182" />
+        <di:waypoint x="201" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_4-_5" >
+        <di:waypoint x="201" y="180" />
+        <di:waypoint x="87" y="259" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_4-_6" >
+        <di:waypoint x="201" y="180" />
+        <di:waypoint x="202" y="257" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_4-_7" >
+        <di:waypoint x="201" y="180" />
+        <di:waypoint x="313" y="256" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_7-_8" >
+        <di:waypoint x="313" y="256" />
+        <di:waypoint x="198" y="332" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_6-_8" >
+        <di:waypoint x="202" y="257" />
+        <di:waypoint x="198" y="332" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_5-_8" >
+        <di:waypoint x="87" y="259" />
+        <di:waypoint x="198" y="332" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_8-_9" >
+        <di:waypoint x="198" y="332" />
+        <di:waypoint x="198" y="425" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_1-_10" >
+        <di:waypoint x="26" y="52" />
+        <di:waypoint x="127" y="49" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_10-_11" >
+        <di:waypoint x="127" y="49" />
+        <di:waypoint x="257" y="46" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

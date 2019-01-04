@@ -1,0 +1,13 @@
+package com.jbpm;
+
+import org.drools.runtime.process.WorkflowProcessInstance;
+import com.plugin.jbpm.drools.model.Hour;
+
+rule "it is night afterwards"
+	ruleflow-group "define_period"//在jbpm中的RuleFlorGroup定义
+	when
+		$process: WorkflowProcessInstance()
+		Hour(value >= 20 || < 6) from $process.getVariable("hourOfDay")
+	then 
+		$process.setVariable("period", "night");
+end
