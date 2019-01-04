@@ -18,6 +18,7 @@
 	<modules>
 	    <module>plugin-interface</module>
 		<module>plugin-api</module>
+		<module>plugin-study</module>
 	</modules>
 
 	<properties>
@@ -54,6 +55,12 @@
 			<dependency>
 				<groupId>com.plugin</groupId>
 				<artifactId>plugin-api</artifactId>
+				<version>${plugin.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.plugin</groupId>
+				<artifactId>plugin-study</artifactId>
 				<version>${plugin.version}</version>
 			</dependency>
 
