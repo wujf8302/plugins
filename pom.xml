@@ -19,6 +19,9 @@
 	    <module>plugin-interface</module>
 		<module>plugin-api</module>
 		<module>plugin-study</module>
+
+		<module>plugin-drools</module>
+		<module>plugin-jbpm</module>
 	</modules>
 
 	<properties>
@@ -61,6 +64,18 @@
 			<dependency>
 				<groupId>com.plugin</groupId>
 				<artifactId>plugin-study</artifactId>
+				<version>${plugin.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.plugin</groupId>
+				<artifactId>plugin-drools</artifactId>
+				<version>${plugin.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.plugin</groupId>
+				<artifactId>plugin-jbpm</artifactId>
 				<version>${plugin.version}</version>
 			</dependency>
 
