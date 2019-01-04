@@ -1,0 +1,117 @@
+封装 1数据与功能捆绑  2访问控制
+1.怎样理解java的多继承
+
+  答 :java不支持多继承，c++支持
+
+2.怎样理解多态
+ 
+  答：多态性就是指父类的某个方法被其子类重写时，可以各自产生自已的功能行为
+      多态分为重写和重载
+      多态：相同行为，不同实现
+
+      
+
+3.extends与implements区别
+
+  答：extends用于（单）继承一个类（class），而implements用于实现一个接口（interface）。
+      interface的引入是为了部分地提供多继承的功能。
+      
+      在interface中只需声明方法头，而将方法体留给实现的class来做。
+      这些实现的class的实例完全可以当作interface的实例来对待。
+      有趣的是在interface之间也可以声明为extends（单继承）的关系。 
+
+4.private,public,protected的使用范围
+ 
+  答：private 私有 仅本类中可以访问
+      public  公共 所有类都可以访问
+      protected  受保护 同包中的类及不同包中的子类都可以该问
+
+5.
+  
+  类的抽象主要作用是代码的复用；
+  
+  接口的作用：
+  1.接口的抽象主要作用是行为的复用
+  2.模块化开发
+  
+  
+6.
+  类的终结器  finalize
+  finalize:方法名，每个类，每个对象都具备。
+  当垃圾回收器确定不存在对该对象的更多引用时，由对象的垃圾回收器调用此方法
+  
+  
+7.java中的异常
+
+  Java中错误分为两类：Error和Exception
+  Error:错误严重，如jvm运行失败，线程出错等，不能用程序修改；
+  Exception:可以通过编译的方式解决，比如i/0等异常；
+  Exception中常见的类：IOException—当发生某种 I/O 异常时，抛出此异常；
+                     ArithmeticException—当出现异常的运算条件时，抛出此异常；
+  Exception的两个重要方法：
+  public String getMessage(){}—返回此 throwable 的详细消息字符串；
+  printStackTrace()：打印堆栈中的异常信息；
+
+
+
+8. 
+  Throwable:throwable类是 Java 语言中所有错误或异常的超类；
+
+9.异常总结
+   (1).try块后必须跟有catch或finally块，或两者都有，try块不能单独出现。
+   (2).catch块不能单独出现，必须加try块。
+   (3).没有异常的时候，不执行catch程序块，跳过catch执行后面的finally程序块；
+   (4).finally:资源的回收和关闭，
+       在所有的catch程序块后面加上finally关键字和程序块，无论前面如何运行，此处都会执行。
+   (5).程序中出现异常没有处理，则往上级抛（调用的地方）；
+       若上级还没有处理，则再往上级抛……；最终抛给虚拟机—操作系统—结束程序。
+
+
+10.自定义异常
+
+public class SalaryException extends Exception{
+    public SalaryException(){
+           super();//最简单的构造方法
+    }
+    public SalaryException(Throwable th){
+           super(th);//将所有错误和异常的超类Throwable定义为自定义异常的对象
+    }
+    public SalaryException(Exception ex){
+            super(ex);//将所有异常定义为自定义的对象
+    }
+    public SalaryException(String msg){
+            super(msg);//自己输入异常解释
+    }
+}
+
+
+11.
+  System.exit（0）       关闭虚拟机
+  
+
+两种异常处理机制：
+
+  第一、在方法中用try...catch语句捕获并处理异常，catach语句可以有多个，用来匹配多个异常。
+        例如：
+			public void p(int x){
+				try{
+				   ...
+				}catch(Exception e){
+				   ...
+				}finally{
+				   ...
+				}
+			}
+  第二、对于处理不了的异常或者要转型的异常，在方法的声明处通过throws语句抛出异常。
+       例如：
+       public void test1() throws MyException{
+			...
+			if(....){
+			    throw new MyException();
+			}
+		}
+		
+
+
+ 
+ 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gb2312"?>
+
+<abcs>
+
+  <department>
+    <nid>1</nid>
+    <sname>测试部</sname>
+    <sdes>测试部完了...</sdes>
+  </department>
+  
+  <department>
+    <nid>2</nid>
+    <sname>实施部</sname>
+    <sdes>实施部完了...</sdes>
+  </department>
+  
+</abcs>
