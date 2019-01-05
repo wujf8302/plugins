@@ -7,7 +7,11 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 import com.plugin.api.PathUtil;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class DrawImage extends Frame {
 	
 	private Image img = null;

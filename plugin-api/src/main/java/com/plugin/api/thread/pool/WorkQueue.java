@@ -1,7 +1,10 @@
 package com.plugin.api.thread.pool;
 
 import java.util.LinkedList;
-
+/**
+ * 
+ * @author wujf
+ */
 public class WorkQueue {
 
 	private final int nThreads;// 线程池的大小

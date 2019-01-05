@@ -2,7 +2,11 @@ package com.plugin.api.cipher;
 
 import java.io.IOException;
 import javax.xml.bind.DatatypeConverter;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class BASE64Coder {
 	
 	 /**

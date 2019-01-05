@@ -1,6 +1,9 @@
 package com.plugin.api;
 
-
+/**
+ * 
+ * @author wujf
+ */
 public class MapUtil {
     /**
      *   public static Map group(List<IndCustomAlarm> alarms){

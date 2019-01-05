@@ -9,7 +9,10 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
 import org.apache.log4j.Logger;
-
+/**
+ * 
+ * @author wujf
+ */
 public class UDPClient {
 	
 	private static Logger log = Logger.getLogger(UDPClient.class);

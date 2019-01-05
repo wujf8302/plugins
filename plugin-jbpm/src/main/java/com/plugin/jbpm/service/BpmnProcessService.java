@@ -36,6 +36,8 @@ import com.plugin.jbpm.commons.JbpmTaskClient;
  *  void afterNodeLeft( ProcessNodeLeftEvent event );
  *  void beforeVariableChanged(ProcessVariableChangedEvent event);
  *  void afterVariableChanged(ProcessVariableChangedEvent event);
+ *  
+ *  @author wujf
  */
 public interface BpmnProcessService {
 	

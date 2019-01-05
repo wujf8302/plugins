@@ -1,7 +1,10 @@
 package com.plugin.api.mode.clone;
 
 import java.io.Serializable;
-
+/**
+ * 
+ * @author wujf
+ */
 public class Bean2 implements Cloneable,Serializable  {
 	
     public String usreName;

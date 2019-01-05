@@ -5,7 +5,10 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.SocketException;
 import org.apache.log4j.Logger;
-
+/**
+ * 
+ * @author wujf
+ */
 public class UDPServer extends Thread{
 
 	private static Logger log = Logger.getLogger(UDPServer.class);

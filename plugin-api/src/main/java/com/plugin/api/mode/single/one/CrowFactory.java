@@ -1,4 +1,8 @@
 package com.plugin.api.mode.single.one;
+/**
+ * 
+ * @author wujf
+ */
 public class CrowFactory   {   
     static Crow crow = null;   
   

@@ -5,7 +5,10 @@ import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.sql.ResultSet;
 import java.util.Hashtable;
-
+/**
+ * 
+ * @author wujf
+ */
 public class PingIpUtil implements Runnable {
 
 	public String ip;         // IP, 用户名, 主机名

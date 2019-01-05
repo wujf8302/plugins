@@ -3,7 +3,10 @@ package com.plugin.api;
 import java.util.LinkedList;
 
 import org.apache.log4j.Logger;
-
+/**
+ * 
+ * @author wujf
+ */
 public class WorkUtil {
 
 	private static Logger log = Logger.getLogger(WorkUtil.class);

@@ -1,6 +1,7 @@
 package com.plugin.api.mode.decorate;
 /**
- * 装饰者模式
+ * 装饰者模式.
+ * @author wujf
  */
 public class Main {   
   

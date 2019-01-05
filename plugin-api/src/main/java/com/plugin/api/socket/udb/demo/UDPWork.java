@@ -4,7 +4,10 @@ import java.net.DatagramPacket;
 import java.util.LinkedList;
 
 import org.apache.log4j.Logger;
-
+/**
+ * 
+ * @author wujf
+ */
 public abstract class UDPWork implements Runnable{
 
 	private static Logger log = Logger.getLogger(UDPWork.class);

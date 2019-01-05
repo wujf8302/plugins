@@ -1,5 +1,8 @@
 package com.plugin.api.mode.stencil;
-
+/**
+ * 
+ * @author wujf
+ */
 public class Team2 extends Template {
 	
 	public void floor() {

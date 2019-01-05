@@ -2,7 +2,10 @@ package com.plugin.api.socket.udb.demo;
 
 import java.net.DatagramPacket;
 import java.net.InetAddress;
-
+/**
+ * 
+ * @author wujf
+ */
 public class Test {
 	
 	public static class MyWord extends UDPWork{

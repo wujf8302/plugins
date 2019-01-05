@@ -3,7 +3,10 @@ package com.plugin.api;
 import java.nio.ByteBuffer;
 
 import org.apache.log4j.Logger;
-
+/**
+ * 字节工具类。
+ * @author wujf
+ */
 public class ByteUtil {
 	
 	private static Logger log = Logger.getLogger(ByteUtil.class);

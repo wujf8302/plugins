@@ -10,7 +10,11 @@ import java.util.LinkedList;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import org.apache.log4j.Logger;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class ClassLoaderUtil {
 	
 	private static Logger log = Logger.getLogger(ClassLoaderUtil.class);

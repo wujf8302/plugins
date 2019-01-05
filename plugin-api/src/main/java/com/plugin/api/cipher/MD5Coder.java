@@ -1,16 +1,14 @@
 package com.plugin.api.cipher;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.StringWriter;
-import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
-import java.util.List;
-
-import com.plugin.api.FileUtil;
-
+/**
+ * 
+ * @author wujf
+ */
 public class MD5Coder {
     
     private static final String[] HEXCHAR = {"0", "1", "2", "3", "4", "5", "6","7", "8", "9", "A", "B", "C", "D", "E", "F" };

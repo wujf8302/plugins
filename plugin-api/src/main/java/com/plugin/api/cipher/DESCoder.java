@@ -22,6 +22,7 @@ import javax.crypto.spec.DESKeySpec;
  * RC4(ARCFOUR)         key size must be between 40 and 1024 bits
  * 具体内容 需要关注 JDK Document http://.../docs/technotes/guides/security/SunProviders.html
  * </pre>
+ * @author wujf
  */
 public class DESCoder {
 

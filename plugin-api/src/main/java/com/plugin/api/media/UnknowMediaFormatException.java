@@ -1,5 +1,9 @@
 package com.plugin.api.media;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class UnknowMediaFormatException extends RuntimeException {
     private static final long serialVersionUID = -8319505572138290645L;
     

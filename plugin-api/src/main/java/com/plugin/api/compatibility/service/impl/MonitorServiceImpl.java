@@ -15,13 +15,14 @@ import java.util.StringTokenizer;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.sun.management.OperatingSystemMXBean;
 import com.plugin.api.compatibility.beans.MonitorInfoBean;
 import com.plugin.api.compatibility.service.IMonitorService;
 import com.plugin.api.compatibility.utils.BytesUtil;
+import com.sun.management.OperatingSystemMXBean;
 
 /**
  * 获取系统信息的业务逻辑实现类.
+ * @author wujf
  */
 public class MonitorServiceImpl implements IMonitorService {
     

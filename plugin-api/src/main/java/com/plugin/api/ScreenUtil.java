@@ -10,6 +10,7 @@ import java.awt.event.MouseMotionListener;
 
 /**
  * 截屏工具.
+ * @author wujf
  */
 public class ScreenUtil extends JFrame {
 

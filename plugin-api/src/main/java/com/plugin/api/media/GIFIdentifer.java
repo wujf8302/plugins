@@ -1,5 +1,9 @@
 package com.plugin.api.media;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class GIFIdentifer extends AbstractMediaIdentifer {
     public static final String WEB_CONTENTTYPE     = "image/gif";
     public static String[]     FLIENAME_SUFFIXLIST = {"gif" };

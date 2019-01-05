@@ -19,7 +19,10 @@ import net.sf.json.JSONFunction;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
-
+/**
+ * 
+ * @author wujf
+ */
 public class StringUtil {
 
     private static Logger log = Logger.getLogger(StringUtil.class);

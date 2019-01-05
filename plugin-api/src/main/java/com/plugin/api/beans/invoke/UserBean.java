@@ -1,5 +1,9 @@
 package com.plugin.api.beans.invoke;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class UserBean {
 	
 	private String userid = "1";

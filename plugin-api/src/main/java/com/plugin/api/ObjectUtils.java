@@ -2,10 +2,14 @@ package com.plugin.api;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
-
+/**
+ * 
+ * @author wujf
+ */
 public abstract class ObjectUtils {
 
 	public ObjectUtils() {
+		
 	}
 
 	public static boolean isCheckedException(Throwable ex) {

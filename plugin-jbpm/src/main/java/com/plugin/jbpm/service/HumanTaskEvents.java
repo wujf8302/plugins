@@ -2,6 +2,7 @@ package com.plugin.jbpm.service;
 
 /**
  * 人工任务事件.
+ * @author wujf
  */
 public interface HumanTaskEvents {
     /** 人工任务创建. */

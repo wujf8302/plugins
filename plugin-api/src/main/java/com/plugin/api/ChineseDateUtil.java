@@ -3,11 +3,9 @@ package com.plugin.api;
 import org.apache.log4j.Logger;
 
 /**
- * ChineseDateUtil .java
- * Copyright(c)1997-2002byDr.HerongYang.http://www.herongyang.com/
  * 中国农历算法-实用于公历1901年至2100年之间的200年
+ * @autor wujf
  */
-
 public class ChineseDateUtil {
 
 	private static Logger log = Logger.getLogger(ChineseDateUtil.class);

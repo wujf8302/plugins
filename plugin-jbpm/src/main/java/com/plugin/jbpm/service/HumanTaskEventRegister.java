@@ -7,6 +7,7 @@ import com.plugin.jbpm.service.HumanTaskEventRegistry;
 
 /**
  * 人工任务注册器.
+ * @author wujf
  */
 public abstract class HumanTaskEventRegister implements InitializingBean {
     

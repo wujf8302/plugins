@@ -12,7 +12,8 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 /**
- * 画线程序
+ * 画线程序.
+ * @author wujf
  */
 class MyLine {
     private int x1;

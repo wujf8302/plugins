@@ -6,7 +6,8 @@ import java.util.List;
 import org.apache.commons.lang.StringUtils;
 
 /**
- * 劈开字符串
+ * 劈开字符串.
+ * @author wujf
  */
 public class SplitUtil {
     

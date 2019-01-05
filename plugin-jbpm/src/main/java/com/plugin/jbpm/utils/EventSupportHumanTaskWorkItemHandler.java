@@ -45,7 +45,10 @@ import org.jbpm.task.service.TaskClientHandler.GetTaskResponseHandler;
 import org.jbpm.task.service.mina.MinaTaskClientConnector;
 import org.jbpm.task.service.mina.MinaTaskClientHandler;
 import org.jbpm.task.service.responsehandlers.AbstractBaseResponseHandler;
-
+/**
+ * 
+ * @author wujf
+ */
 public class EventSupportHumanTaskWorkItemHandler implements WorkItemHandler {
     
     private static final Log log = LogFactory.getLog(EventSupportHumanTaskWorkItemHandler.class);

@@ -5,7 +5,11 @@ import org.drools.SystemEventListener;
 import org.jbpm.task.service.TaskService;
 import org.jbpm.task.service.TaskServiceSession;
 import com.plugin.jbpm.service.HumanTaskEventService;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class JbpmTaskService extends TaskService {
 
     protected EntityManagerFactory emf;

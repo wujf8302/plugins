@@ -12,6 +12,7 @@ import java.io.RandomAccessFile;
 
 /**
  * 功能描述：创建TXT文件并进行读、写、修改操作
+ * @author wujf
  */
 public class ReadWriteFile {
 	

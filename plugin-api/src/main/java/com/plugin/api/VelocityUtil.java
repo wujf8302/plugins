@@ -14,12 +14,11 @@ import org.apache.velocity.app.Velocity;
  * 模版技术.
  * @author wujf
  * @version Revision 1.0.0
- *
  */
 public class VelocityUtil {
     
     /**
-     * simpleEvalAsString方法的测试代码.
+     * 测试代码.
      */
     private static void simpleEvalAsStringTest() {
         Map<String, Object> map = new HashMap<String, Object>();

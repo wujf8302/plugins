@@ -9,9 +9,11 @@ import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESedeKeySpec;
 
-
+/**
+ * 
+ * @author wujf
+ */
 public class Endecrypt {
-	
 	
 	/**
 	 * 进行MD5加密

@@ -17,7 +17,11 @@ import org.jbpm.task.service.TaskService;
 import org.jbpm.task.service.TaskServiceSession;
 import com.plugin.jbpm.service.HumanTaskEventService;
 import com.plugin.jbpm.utils.ConstantsUtil.HumanTaskEvents;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class JbpmTaskSession extends TaskServiceSession {
     
     private static final Log       log = LogFactory.getLog(JbpmTaskSession.class);

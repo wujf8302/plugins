@@ -1,5 +1,9 @@
 package com.plugin.api.media;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public abstract class AbstractMediaIdentifer implements MediaRecogniser {
     protected boolean b_IKnowIt = false;
     

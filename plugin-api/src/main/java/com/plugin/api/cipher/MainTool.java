@@ -8,9 +8,7 @@ import java.io.InputStreamReader;
 import java.io.StringWriter;
 
 /**
- * RO Utility Mainly used for: 1.Double Open client 2.Open Unlimited View
- * 
- * @author Ciro Deng(cdtdx@sohu.com)
+ * @author wujf
  * @version 1.0
  * 
  */

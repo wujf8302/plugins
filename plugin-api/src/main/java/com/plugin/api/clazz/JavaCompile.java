@@ -13,7 +13,11 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class JavaCompile {
     
     private static String enter = null;

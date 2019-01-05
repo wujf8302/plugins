@@ -2,7 +2,10 @@ package com.plugin.api;
 
 import java.io.File;
 import org.apache.log4j.Logger;
-
+/**
+ * 
+ * @author wujf
+ */
 public class Tools {
 	
 	private static Logger log = Logger.getLogger(Tools.class);

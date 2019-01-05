@@ -9,8 +9,7 @@ import java.math.RoundingMode;
  * 2、针对不同的格式化要求：万，百万，亿等  
  * 3、会计格式的货币值：添加','符号  
  * 4、非科学计数法的货币值  
- * @author chanson  
- * @time 2008-12-9  
+ * @author wujf  
  * @version 1.0  
  */  
 public class MoneyUtil {   

@@ -2,7 +2,8 @@ package com.plugin.api.socket.udb.demo;
 
 import java.util.LinkedList;
 /***
- * 线程池
+ * 线程池.
+ * @author wujf
  */
 public class WorkQueue {
 	

@@ -1,8 +1,8 @@
 package com.plugin.api.thread;
 
-
 /**
- * 守护线程
+ * 守护线程.
+ * @author wujf
  */
 public class DaemonThread extends Thread{
 

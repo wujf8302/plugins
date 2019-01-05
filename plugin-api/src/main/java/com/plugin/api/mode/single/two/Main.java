@@ -1,6 +1,7 @@
 package com.plugin.api.mode.single.two;
 /**
- * 单例模式(饿汉)
+ * 单例模式(饿汉).
+ * @author wujf
  */
 public class Main {
 	public static void main(String[] args) {

@@ -7,7 +7,10 @@ import java.util.HashMap;
 import java.util.Map;   
 
 import org.apache.log4j.Logger;
-
+/**
+ * 
+ * @author wujf
+ */
 public class VOUtils {    
     
     private static Logger log = Logger.getLogger(VOUtils.class);

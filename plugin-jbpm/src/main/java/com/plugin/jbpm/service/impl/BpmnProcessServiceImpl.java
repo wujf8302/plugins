@@ -28,6 +28,7 @@ import com.plugin.jbpm.utils.JbpmUtil;
 
 /**
  * jbpm5流程实现.
+ * @author wujf
  */
 public class BpmnProcessServiceImpl implements BpmnProcessService {
     

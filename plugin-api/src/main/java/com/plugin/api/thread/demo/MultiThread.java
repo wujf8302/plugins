@@ -3,7 +3,8 @@ package com.plugin.api.thread.demo;
 import java.io.IOException;
 
 /**
- * 多线程编程
+ * 多线程编程.
+ * @author wujf
  */
 public class MultiThread {
 	

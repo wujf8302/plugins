@@ -1,5 +1,5 @@
 package com.plugin.api.mode.clone;
-/*
+/**
 1.为什么用super.clone()克隆出的不是Object对象而是当前对象？
 
 原因：Object中的Clone()执行时使用了java的RTTI(运行时加载)机制，动态的找到正在调用clone()
@@ -30,6 +30,7 @@ c)序列化可以实现深层复制。我们的写入到流里面的是对象的
 
 还有一种深拷贝方法，就是将对象串行化
 但是串行化却很耗时，在一些框架中，我们便可以感受到，它们往往将对象进行串行化后进行传递，耗时较多。
+@author wujf
 */
 //原型模式范例
 public class CopyBean {

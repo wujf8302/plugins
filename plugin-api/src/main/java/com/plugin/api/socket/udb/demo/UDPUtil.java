@@ -4,7 +4,10 @@ import java.net.DatagramPacket;
 import java.net.InetAddress;
 
 import org.apache.log4j.Logger;
-
+/**
+ * 
+ * @author wujf
+ */
 public class UDPUtil {
 
 	private static Logger log = Logger.getLogger(UDPUtil.class);

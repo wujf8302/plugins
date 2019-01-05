@@ -5,9 +5,11 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.OptionalDataException;
 import java.io.Serializable;
-
+/**
+ * 
+ * @author wujf
+ */
 public class Bean1 implements Cloneable,Serializable{
 
 	public int x;

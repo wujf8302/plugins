@@ -7,7 +7,10 @@ import org.jbpm.task.service.TaskServiceSession;
 
 import com.plugin.jbpm.service.HumanTaskEventRegistry;
 import com.plugin.jbpm.utils.JbpmTaskServiceSession;
-
+/**
+ * 
+ * @author wujf
+ */
 public class JbpmTaskService extends TaskService {
 
     protected EntityManagerFactory emf;

@@ -13,6 +13,7 @@ import org.apache.log4j.Logger;
 
 /**
  * 产生随机数的工具类。
+ * @author wujf
  */
 public class RandomUtil {
     

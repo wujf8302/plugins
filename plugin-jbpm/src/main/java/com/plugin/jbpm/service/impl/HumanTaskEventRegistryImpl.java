@@ -12,7 +12,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.plugin.jbpm.service.HumanTaskEventListener;
 import com.plugin.jbpm.service.HumanTaskEventRegistry;
-
+/**
+ * 
+ * @author wujf
+ */
 public class HumanTaskEventRegistryImpl implements HumanTaskEventRegistry {
     
     private static final Log log  = LogFactory.getLog(HumanTaskEventRegistryImpl.class);

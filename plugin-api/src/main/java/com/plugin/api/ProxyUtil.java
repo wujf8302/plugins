@@ -6,7 +6,8 @@ import java.lang.reflect.Proxy;
 
 import org.apache.log4j.Logger;
 /**
- * 代理类
+ * 代理类.
+ * @author wujf
  */
 public class ProxyUtil {
 	

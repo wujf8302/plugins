@@ -1,11 +1,8 @@
 package com.plugin.api.cipher;
 
 /**
- * @Package:
- * @ClassName:TypeConversion
- * @Description:字节流、字符串、16进制字符串转换
- * @author:xk
- * @date:Jan 8, 2013 5:00:08 PM
+ * 字节流、字符串、16进制字符串转换
+ * @author wujf
  */
 public class Conversion {
     /**

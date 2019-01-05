@@ -5,7 +5,8 @@ import java.util.Comparator;
 import com.plugin.api.beans.sort.Person;
 
 /** 
-* Person类的排序接口 
+* Person类的排序接口.
+* @author wujf
 */ 
 public class PersonComparator implements Comparator{ 
     /** 

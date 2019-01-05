@@ -14,9 +14,8 @@ import java.util.jar.JarFile;
 import org.apache.log4j.Logger;
 
 /**
- * 类相关的工具类
- * 
- * @author <a href="mailto:ohergal@gmail.com">ohergal</a>
+ * 类相关的工具类.
+ * @author wujf
  */
 public class ClassUtil {
     

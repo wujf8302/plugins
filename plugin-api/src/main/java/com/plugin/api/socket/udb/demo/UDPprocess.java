@@ -3,7 +3,10 @@ package com.plugin.api.socket.udb.demo;
 import java.net.DatagramPacket;
 
 import org.apache.log4j.Logger;
-
+/**
+ * 
+ * @author wujf
+ */
 public class UDPprocess {
 
 	private static Logger log = Logger.getLogger(UDPprocess.class);

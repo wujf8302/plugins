@@ -4,7 +4,7 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 
-/*
+/**
  TCP与UDP比较 
  TCP       
  是否连接    面向连接的
@@ -23,6 +23,7 @@ import java.net.InetAddress;
  2、少量数据（有限制，每次不超过64K）
  如：视频会议等
  速度 快
+ @author wujf
  */
 public class SocketUDP {
 

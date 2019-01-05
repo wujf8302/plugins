@@ -14,6 +14,7 @@ import com.plugin.api.beans.sort.Cat;
  } 
  2. List<Cat> listCat = new ArrayList<Cat>();
  3. Collections.sort(list);
+ @author wujf
 */ 
 public class TestComparable { 
 

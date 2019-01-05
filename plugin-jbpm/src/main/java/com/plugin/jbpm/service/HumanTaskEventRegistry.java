@@ -2,7 +2,10 @@ package com.plugin.jbpm.service;
 
 import java.util.Map;
 import org.jbpm.task.Task;
-
+/**
+ * 
+ * @author wujf
+ */
 public interface HumanTaskEventRegistry {
     
     public void addEventListener(String eventName, HumanTaskEventListener eventListener);

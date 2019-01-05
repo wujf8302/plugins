@@ -1,11 +1,14 @@
 package com.plugin.api.thread.demo;
 
-class ThreadUseRunnable implements Runnable{
+/**
+ * 
+ * @author wujf
+ */
+class ThreadUseRunnable implements Runnable {
 	/*
-	 通过实现Runnable接口中的run()方法,再以这个实现了run()方法的类
-     为参数创建Thread的线程实例
-	 Thread thread2=new Thread(this);以这个实现了Runnable接口中run()方法的类为参数创建Thread类的线程实例
-    */
+	 * 通过实现Runnable接口中的run()方法,再以这个实现了run()方法的类 为参数创建Thread的线程实例 Thread thread2=new
+	 * Thread(this);以这个实现了Runnable接口中run()方法的类为参数创建Thread类的线程实例
+	 */
 	public void run() {
 		System.out.println("我是Thread类的线程实例并以实现了Runnable接口的类为参数!");
 		System.out.println("我将挂起1秒!");

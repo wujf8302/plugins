@@ -25,6 +25,7 @@ import com.plugin.api.beans.invoke.HomeBean;
  * 
  * 动态编译class
  * 解压打包的jar包
+ * @author wujf
  */
 public class URLClassLoaderUtil {
     

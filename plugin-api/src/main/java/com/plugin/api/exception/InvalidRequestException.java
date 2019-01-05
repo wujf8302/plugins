@@ -1,5 +1,9 @@
 package com.plugin.api.exception;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class InvalidRequestException extends Exception {
     private static final long serialVersionUID = 7595048177340914517L;
     private Throwable         m_ex;

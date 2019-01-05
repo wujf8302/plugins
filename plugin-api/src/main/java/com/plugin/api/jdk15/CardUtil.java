@@ -34,7 +34,8 @@ import org.xml.sax.SAXException;
 
 import com.plugin.api.PathUtil;
 /**
- * 自动打卡
+ * 自动打卡.
+ * @author wujf
  */
 public class CardUtil implements Callable{
 

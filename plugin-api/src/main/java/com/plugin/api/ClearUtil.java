@@ -6,9 +6,10 @@ import java.net.URL;
 
 import org.apache.log4j.Logger;
 
-/* 
-Oracle数据库的执行逻辑备份操作
-ms-dos: exp system/oracle@myoracle inctype=complete file='c:\db.dmp ' log='c:\exp.log' 
+/**
+ * Oracle数据库的执行逻辑备份操作
+ * ms-dos: exp system/oracle@myoracle inctype=complete file='c:\db.dmp ' log='c:\exp.log' 
+ * @author wujf
 */
 public class ClearUtil {
     

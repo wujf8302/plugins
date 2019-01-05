@@ -1,7 +1,8 @@
 package com.plugin.api.beans.sort;
 
 /** 
-* 要排序的元素对象 
+* 要排序的元素对象 .
+* @author wujf
 */ 
 public class Cat implements Comparable{ 
     private int age; 

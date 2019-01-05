@@ -10,7 +10,10 @@ import org.jbpm.task.service.mina.MinaTaskServer;
 
 import com.plugin.jbpm.service.HumanTaskEventRegistry;
 import com.plugin.jbpm.utils.ConstantsUtil;
-
+/**
+ * 
+ * @author wujf
+ */
 public class JbpmTaskServer {
     
     private static final Log       log = LogFactory.getLog(JbpmTaskServer.class);

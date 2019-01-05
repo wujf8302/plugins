@@ -1,5 +1,8 @@
 package com.plugin.api.mode.stencil;
-
+/**
+ * 
+ * @author wujf
+ */
 public abstract class Template {
 	
 	public void fitment() {

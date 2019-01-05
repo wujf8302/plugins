@@ -15,29 +15,13 @@ import net.sf.json.JSONObject;
 
 import org.apache.commons.collections.ListUtils;
 import org.apache.log4j.Logger;
-
+/**
+ * 
+ * @author wujf
+ */
 public class ListUtil extends ListUtils{
 	
 	private static Logger log = Logger.getLogger(ListUtil.class);
-	
-	public static void test(String[] args) {
-		List<String> list1 = new ArrayList<String>();
-		list1.add("002067");
-		list1.add("000988");
-		list1.add("000050");
-		
-		List<String> list2 = new ArrayList<String>();
-		list2.add("002328");
-		list2.add("000988");
-		list2.add("600775");
-		
-		//List<String> list3 = sum(list1, list2);//去重
-		List<String> list3 = intersection(list1, list2);//交集
-
-		for (int i = 0; i < list3.size(); i++) {
-			System.out.println(list3.get(i));
-		}
-	}
 	
 	public static void println(List list){
 		if(list != null && list.size() > 0){

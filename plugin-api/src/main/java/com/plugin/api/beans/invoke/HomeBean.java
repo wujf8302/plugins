@@ -2,7 +2,11 @@ package com.plugin.api.beans.invoke;
 
 import java.io.Serializable;
 import java.util.Date;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class HomeBean implements Serializable {
 
     private String hid;//房间id

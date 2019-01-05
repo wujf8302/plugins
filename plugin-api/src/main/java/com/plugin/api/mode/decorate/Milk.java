@@ -1,5 +1,8 @@
 package com.plugin.api.mode.decorate;
-
+/**
+ * 
+ * @author wujf
+ */
 public class Milk implements Product {
 
 	private Product p;

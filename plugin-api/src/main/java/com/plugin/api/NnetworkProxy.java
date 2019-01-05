@@ -1,8 +1,10 @@
 package com.plugin.api;
-
+/**
+ * 
+ * @author wujf
+ */
 public class NnetworkProxy {
 
-	
 	public static void main(String[] args) {
 		
 		NnetworkProxy.proxy("true", "192.168.13.19", "7777");

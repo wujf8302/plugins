@@ -1,4 +1,8 @@
 package com.plugin.api.thread.pool;
+/**
+ * 
+ * @author wujf
+ */
 class Mytask implements Runnable{//任务接口 
          public void run(){ 
               String name=Thread.currentThread().getName(); 

@@ -6,6 +6,7 @@ import java.net.URL;
 import java.net.URLClassLoader;
 /**
  * 类或jar包动态加载
+ * @author wujf
  */
 public class ClassLoaderUtil extends URLClassLoader{
 

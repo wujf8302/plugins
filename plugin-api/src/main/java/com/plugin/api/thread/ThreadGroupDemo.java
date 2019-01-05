@@ -1,9 +1,11 @@
 package com.plugin.api.thread;
- 
+/**
+ * 
+ * @author wujf
+ */
 public class ThreadGroupDemo { 
 	
     public static void main(String[] args){
-
         
         ThreadGroup threadGroup1 = new ThreadGroup("group1"){   
             public void uncaughtException(Thread t,Throwable e)   {   

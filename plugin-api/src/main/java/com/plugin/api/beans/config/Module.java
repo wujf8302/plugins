@@ -1,7 +1,11 @@
 package com.plugin.api.beans.config;
 
 import java.util.Properties;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class Module {
 
 	private Properties properties;

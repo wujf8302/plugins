@@ -19,6 +19,7 @@ import com.plugin.api.beans.sort.Person;
   } 
   2.Set treeSetTest = new TreeSet(new UserSort());
   3.往集合中加数据
+  @author wujf
  */
 
 //List有序 set无序

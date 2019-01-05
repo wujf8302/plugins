@@ -2,7 +2,10 @@ package com.plugin.api;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
-
+/**
+ * 
+ * @author wujf
+ */
 public class MathUtil {
 	
 	/**

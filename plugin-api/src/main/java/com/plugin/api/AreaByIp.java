@@ -8,7 +8,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 /**
- * 校验Ip归属地
+ * 校验Ip归属地.
+ * @author wujf
  */
 public class AreaByIp {
 

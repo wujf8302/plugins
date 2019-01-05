@@ -19,6 +19,7 @@ import com.plugin.api.beans.invoke.UserBean;
  * 在运行时构造任意一个类的对象；
  * 在运行时判断任意一个类所具有的成员变量和方法；
  * 在运行时调用任意一个对象的方法；生成动态代理。
+ * @author wujf
  */
 public class InvokeUtil {
     

@@ -1,5 +1,9 @@
 package com.plugin.api.compatibility.beans;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class MonitorInfoBean {
 	/** 可使用内存. */
 	private long totalMemory;

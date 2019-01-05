@@ -5,7 +5,10 @@ import java.util.Random;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
-
+/**
+ * 
+ * @author wujf
+ */
 public class NumberUtil {
 
 	private static Logger log = Logger.getLogger(NumberUtil.class);

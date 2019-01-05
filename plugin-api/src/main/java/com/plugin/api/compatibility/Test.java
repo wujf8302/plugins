@@ -3,7 +3,11 @@ package com.plugin.api.compatibility;
 import com.plugin.api.compatibility.beans.MonitorInfoBean;
 import com.plugin.api.compatibility.service.IMonitorService;
 import com.plugin.api.compatibility.service.impl.MonitorServiceImpl;
-
+/**
+ * 
+ * @author wujf
+ *
+ */
 public class Test {
 
     public static void main(String[] args) throws Exception {

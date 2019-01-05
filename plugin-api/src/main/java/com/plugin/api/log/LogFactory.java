@@ -22,7 +22,8 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
 /**
- * 日志工厂(短信助手)
+ * 日志工厂(短信助手).
+ * @author wujf
  */
 public class LogFactory{
 

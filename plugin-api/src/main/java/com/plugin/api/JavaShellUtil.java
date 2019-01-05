@@ -8,7 +8,10 @@ import java.io.OutputStreamWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+/**
+ * 
+ * @author wujf
+ */
 public class JavaShellUtil {
     // 基本路径
     private static final String basePath = "/tmp/";

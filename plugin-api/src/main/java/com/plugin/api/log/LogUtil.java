@@ -8,8 +8,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 /**
- * 日志工具
- * 
+ * 日志工具.
  * @author wujf
  * @version Revision 1.0.0
  */

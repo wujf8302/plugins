@@ -20,7 +20,10 @@ import org.apache.log4j.Logger;
 
 import com.plugin.api.FileUtil;
 import com.plugin.api.StringUtil;
-
+/**
+ * 
+ * @author wujf
+ */
 public class PathUtil {
     
     private static Logger      log      = Logger.getLogger(PathUtil.class);

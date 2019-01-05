@@ -2,7 +2,10 @@ package com.plugin.api.sort;
 
 import java.util.HashSet;
 import java.util.Iterator;
-
+/**
+ * 
+ * @author wujf
+ */
 public class HashSetTest {
 	// java 中Set的使用(不允许有重复的对象):
 	@SuppressWarnings("unchecked")

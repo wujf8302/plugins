@@ -10,8 +10,10 @@ import java.io.Serializable;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+
 /**
- * 实现图片的连续播放
+ * 实现图片的连续播放.
+ * @author wujf
  */
 public class AnimatorUtil extends JPanel implements ActionListener,Serializable{
 

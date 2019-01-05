@@ -11,7 +11,8 @@ import java.util.regex.Pattern;
 /**
  * 将利用 native2ascii 命令编码的资源文件反向. <br>  
  * native2ascii < resource.properties > resource_zh_CN.properties<br>  
- * java -jar UncodeReverse.jar<br>   
+ * java -jar UncodeReverse.jar<br>  
+ * @author wujf 
  */  
 public class UncodeReverse {   
   

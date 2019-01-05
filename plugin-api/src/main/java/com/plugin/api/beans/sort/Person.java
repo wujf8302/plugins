@@ -1,7 +1,8 @@
 package com.plugin.api.beans.sort;
 
 /**
- * 要排序的元素对象 实现Comparator接口排序
+ * 要排序的元素对象 实现Comparator接口排序.
+ * @author wujf
  */
 public class Person {
 	private int age;

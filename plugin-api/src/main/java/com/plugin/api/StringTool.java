@@ -1,9 +1,8 @@
 package com.plugin.api;
 
 /**
- * @author 黄小天  1853955116@qq.com
- * @date 2018年8月21日 上午10:49:34
  * 字符串工具类
+ * @author wujf
  */
 public class StringTool {
 	

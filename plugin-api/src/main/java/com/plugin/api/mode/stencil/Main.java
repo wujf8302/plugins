@@ -1,6 +1,7 @@
 package com.plugin.api.mode.stencil;
 /**
- * 模版模式
+ * 模版模式.
+ * @author wujf
  */
 public class Main {
 	

@@ -3,10 +3,9 @@ package com.plugin.api;
 import org.apache.log4j.Logger;
 
 /**
- * 手机和PHS号码工具类，判断号码是否为移动，联通、电信的合法号码 采用正则表达式方式，具体号码信息是通过网上查找得来。
- * 
- * @author huangcm
- * @version 2009-1-28
+ * 手机和PHS号码工具类，判断号码是否为移动，联通、
+ * 电信的合法号码 采用正则表达式方式，具体号码信息是通过网上查找得来。
+ * @author wujf
  */
 public class PhoneUtil {
 
