@@ -2,7 +2,10 @@ package com.plugin.drools.utils;
 
 import org.drools.RuleBase;
 import org.drools.RuleBaseFactory;
-
+/**
+ * Droolsπ§≥ß¿‡.
+ * @author wujf
+ */
 public class RuleBaseFacatory {
 
 	private static RuleBase ruleBase;
