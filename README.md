@@ -2,11 +2,13 @@
 This component library, which was previously packaged as an amateur by the author (wujf), is now being submitted to GITHUB for exchange learning.
 
 drools rule engine.
+
 jbpm   workflow engine.
 
-# ÖĞÎÄËµÃ÷
-´Ë×é¼ş¿âÎª×÷Õß(wujf)ÔçÇ°ÒµÓàÊ±·â×°£¬ÏÖÌá½»µ½GITHUB£¬×÷Îª½»Á÷Ñ§Ï°Ö®ÓÃ¡£
+# ä¸­æ–‡è¯´æ˜
+æ­¤ç»„ä»¶åº“ä¸ºä½œè€…(wujf)æ—©å‰ä¸šä½™æ—¶å°è£…ï¼Œç°æäº¤åˆ°GITHUBï¼Œä½œä¸ºäº¤æµå­¦ä¹ ä¹‹ç”¨ã€‚
 
-drools ¹æÔòÒıÇæ
-jbpm   Á÷³ÌÒıÇæ
+drools è§„åˆ™å¼•æ“
+
+jbpm   æµç¨‹å¼•æ“
 
