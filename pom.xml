@@ -16,7 +16,6 @@
 	<url>http://maven.apache.org</url>
 
 	<modules>
-	    <module>plugin-interface</module>
 		<module>plugin-api</module>
 		<module>plugin-study</module>
 
@@ -48,12 +47,6 @@
 		            </exclusion>  
 		        </exclusions>  
 		    </dependency>  
-
-			<dependency>
-				<groupId>com.plugin</groupId>
-				<artifactId>plugin-interface</artifactId>
-				<version>${plugin.version}</version>
-			</dependency>
 
 			<dependency>
 				<groupId>com.plugin</groupId>
