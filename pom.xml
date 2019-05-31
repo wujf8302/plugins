@@ -56,12 +56,6 @@
 
 			<dependency>
 				<groupId>com.plugin</groupId>
-				<artifactId>plugin-study</artifactId>
-				<version>${plugin.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.plugin</groupId>
 				<artifactId>plugin-drools</artifactId>
 				<version>${plugin.version}</version>
 			</dependency>
